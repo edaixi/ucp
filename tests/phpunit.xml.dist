@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="bootstrap.php">
+  <testsuites>
+    <testsuite name="SMS">
+      <directory suffix=".php">sms</directory>
+    </testsuite>
+  </testsuites>
+
+  <logging>
+    <log type="coverage-html" target="coverage" title="PHPUnit" charset="UTF-8" yui="true" highlight="true" lowUpperBound="35" highLowerBound="90"/>
+  </logging>
+  <filter>
+    <blacklist>
+      <directory suffix=".php">.</directory>
+    </blacklist>
+    <whitelist>
+      <directory suffix=".php">../library</directory>
+    </whitelist>
+  </filter>
+</phpunit>
