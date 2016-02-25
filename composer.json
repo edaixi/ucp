@@ -1,9 +1,12 @@
 {
-  "require": {
-    "rmccue/requests": ">=1.0",
-    "phpunit/phpunit": "5.0.*"
-  },
-  "autoload": {
-    "psr-0": {"Requests": "library/"}
-  }
+"require": {
+	"chrisboulton/php-resque":"dev-master",
+    	"rmccue/requests":"*"
+	},
+ "autoload": {
+        "psr-4": { 
+        	"Engine\\": ["sdk/", "lib/"] ,
+        	"": ["jobs/","config/"] 
+        }
+    }
 }
